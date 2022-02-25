@@ -415,7 +415,7 @@ router.post("/status/changed", (req, res) => {
 })
 
 
-//  selected avatar requests list view for admin
+//  selected avatar requests list view for admin user
 
 router.post("/view/asklist" , (req, res) => {
     console.log(req.body.id);
@@ -423,20 +423,6 @@ router.post("/view/asklist" , (req, res) => {
         res.send(result);
     })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 router.delete("/delete-user/:id", (req, res)=> {
